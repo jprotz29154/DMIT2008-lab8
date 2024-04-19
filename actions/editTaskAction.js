@@ -6,7 +6,7 @@ import {ref, set, push, update} from 'firebase/database'
 import { db } from '@/lib/firebaseInit'
 // formData  = formData object name/value pairs from the form
 export async function editAction(prevState, formData) {
-	const task = formData.get('task')
+	const todo = formData.get('task')
 	const category = formData.get('category')
 	const uid = formData.get('uid')
 
