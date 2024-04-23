@@ -53,12 +53,12 @@ function EditTaskForm({children, className, uid, payload}) {
 
 				<FormControl className="flex flex-col">
 					<Label htmlFor="category">Category</Label>
-					<Input  onInput={handleInput} id="category" name="category" placeholder="enter the task category" />
+					<Input  onInput={handleInput} id="category" name="category" defaultValue={category} />
 				</FormControl>
 
 				<FormControl className="flex flex-col">
 					<Label htmlFor="task">Task</Label>
-					<Input onInput={handleInput} id="task" name="task" placeholder="enter a new task" />
+					<Input onInput={handleInput} id="task" name="task" defaultValue={task} />
 				</FormControl>
 				<FormControl className="pt-3">
 					<button className="bg-black text-white w-full py-2.5 rounded-lg mt-3 font-semibold">
